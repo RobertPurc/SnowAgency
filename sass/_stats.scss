@@ -1,0 +1,28 @@
+.statistics {
+  grid-column: full-start / full-end;
+  //   grid-column: center-start / center-end;
+  background-image: url("../img/Bg-stats.gif");
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  &__figure {
+    margin: 3rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__img {
+    display: block;
+    width: 6rem;
+  }
+  &__wrapper {
+    color: white;
+    font-size: 1.8rem;
+    margin-left: 4rem;
+    font-family: "Noto Sans", sans-serif;
+    // line-height: 1.6;
+    text-transform: uppercase;
+  }
+}

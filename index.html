@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Noto+Sans:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Snow</title>
+  </head>
+  <body class="container">
+    <header class="header">
+      <nav class="navigation">
+        <h1 class="navigation__logo">Snow</h1>
+        <ul class="navigation__list">
+          <li class="navigation__item">About</li>
+          <li class="navigation__item">Projects</li>
+          <li class="navigation__item">Latests Posts</li>
+          <li class="navigation__item">Contact</li>
+        </ul>
+        <button class="navigation__btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+      <div class="header__content">
+        <p class="header__title">New Branding Agency</p>
+        <h2 class="header__heading">
+          We are about to change the way <span>you publish on web</span>
+        </h2>
+        <button class="header__btn"><span>&DownArrow;</span></button>
+      </div>
+    </header>
+
+    <section class="about">
+      <h3 class="heading">About our agency</h3>
+      <p class="description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem fuga
+        totam at hic quibusdam optio quae cum ipsam dolorem expedita. Lorem
+        ipsum dolor sit amet, consectetur adipisicing elit. Sed, consequuntur.
+      </p>
+    </section>
+    <section class="statistics">
+      <figure class="statistics__figure">
+        <img class="statistics__img" src="./img/portfolio.svg" alt="bag" />
+        <div class="statistics__wrapper">
+          <p class="statistics__number" data-target="837">0</p>
+          <p class="statistics__description">something</p>
+        </div>
+      </figure>
+      <figure class="statistics__figure">
+        <img class="statistics__img" src="./img/clock.svg" alt="bag" />
+        <div class="statistics__wrapper">
+          <p class="statistics__number" data-target="524">0</p>
+          <p class="statistics__description">something</p>
+        </div>
+      </figure>
+      <figure class="statistics__figure">
+        <img class="statistics__img" src="./img/favourite.svg" alt="bag" />
+        <div class="statistics__wrapper">
+          <p class="statistics__number" data-target="300">0</p>
+          <p class="statistics__description">something</p>
+        </div>
+      </figure>
+      <figure class="statistics__figure">
+        <img class="statistics__img" src="./img/heart.svg" alt="bag" />
+        <div class="statistics__wrapper">
+          <p class="statistics__number" data-target="153">0</p>
+          <p class="statistics__description">something</p>
+        </div>
+      </figure>
+    </section>
+    <section class="projects">
+      <h3 class="heading">Best Projects</h3>
+      <p class="description">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, quis.
+      </p>
+      <div class="projects__container">
+        <figure class="projects__figure">
+          <img class="projects__img" src="./img/portf-1.jpg" alt="" />
+          <figcaption>
+            <a href="#">read more</a>
+          </figcaption>
+        </figure>
+        <figure class="projects__figure">
+          <img class="projects__img" src="./img/portf-2.jpg" alt="" />
+          <figcaption>
+            <a href="#">read more</a>
+          </figcaption>
+        </figure>
+
+        <figure class="projects__figure">
+          <img class="projects__img" src="./img/portf-3.jpg" alt="" />
+          <figcaption>
+            <a href="#">read more</a>
+          </figcaption>
+        </figure>
+        <figure class="projects__figure">
+          <img class="projects__img" src="./img/portf-4.jpg" alt="" />
+          <figcaption>
+            <a href="#">read more</a>
+          </figcaption>
+        </figure>
+        <figure class="projects__figure">
+          <img class="projects__img" src="./img/portf-5.jpg" alt="" />
+          <figcaption>
+            <a href="#">read more</a>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="testimonials">
+      <div class="testimonials-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <p class="testimonials__text">
+              Outstanding job and exceeded all expectations. It was a pleasure
+              to work with them on a sizable first project.
+            </p>
+            <p class="testimonials__author">Michael Hopkings</p>
+          </div>
+          <div class="swiper-slide">
+            <p class="testimonials__text">
+              Outstanding job and exceeded all expectations. It was a pleasure
+              to work with them on a sizable first project.
+            </p>
+            <p class="testimonials__author">Michael Hopkings</p>
+          </div>
+          <div class="swiper-slide">
+            <p class="testimonials__text">
+              Outstanding job and exceeded all expectations. It was a pleasure
+              to work with them on a sizable first project.
+            </p>
+            <p class="testimonials__author">Michael Hopkings</p>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination slider-pagination"></div>
+        <!-- Add Arrows -->
+      </div>
+    </section>
+    <section class="blog">
+      <h3 class="heading blog--heading">Latest Blog</h3>
+      <p class="description">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur in
+        sunt ex iste consequatur neque optio quis excepturi placeat atque.
+      </p>
+      <div class="blog__container">
+        <div class="swiper-container blog__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide blog__slide">
+              <article class="blog__article">
+                <figure class="blog__figure">
+                  <img src="/img/lake.jpg" alt="" class="blog__img" />
+                  <figcaption>Lake</figcaption>
+                </figure>
+                <p class="blog__title">Title</p>
+                <p class="blog__date">21 Jun. 2020</p>
+                <p class="blog__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facere culpa laborum recusandae pariatur soluta veniam!
+                </p>
+              </article>
+            </div>
+            <div class="swiper-slide blog__slide">
+              <article class="blog__article">
+                <figure class="blog__figure">
+                  <img src="/img/sunrise.jpg" alt="" class="blog__img" />
+                  <figcaption>sunrise</figcaption>
+                </figure>
+                <p class="blog__title">Title</p>
+                <p class="blog__date">21 Jun. 2020</p>
+                <p class="blog__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facere culpa laborum recusandae pariatur soluta veniam!
+                </p>
+              </article>
+            </div>
+            <div class="swiper-slide blog__slide">
+              <article class="blog__article">
+                <figure class="blog__figure">
+                  <img src="/img/utah.jpg" alt="" class="blog__img" />
+                  <figcaption>Uath</figcaption>
+                </figure>
+                <p class="blog__title">Title</p>
+                <p class="blog__date">21 Jun. 2020</p>
+                <p class="blog__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facere culpa laborum recusandae pariatur soluta veniam!
+                </p>
+              </article>
+            </div>
+            <div class="swiper-slide blog__slide">
+              <article class="blog__article">
+                <figure class="blog__figure">
+                  <img src="/img/lake.jpg" alt="" class="blog__img" />
+                  <figcaption>Lake</figcaption>
+                </figure>
+                <p class="blog__title">Title</p>
+                <p class="blog__date">21 Jun. 2020</p>
+                <p class="blog__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facere culpa laborum recusandae pariatur soluta veniam!
+                </p>
+              </article>
+            </div>
+            <div class="swiper-slide blog__slide">
+              <article class="blog__article">
+                <figure class="blog__figure">
+                  <img src="/img/sunrise.jpg" alt="" class="blog__img" />
+                  <figcaption>sunrise</figcaption>
+                </figure>
+                <p class="blog__title">Title</p>
+                <p class="blog__date">21 Jun. 2020</p>
+                <p class="blog__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facere culpa laborum recusandae pariatur soluta veniam!
+                </p>
+              </article>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Add Navigation -->
+        </div>
+      </div>
+
+      <!-- <div class="blog__slide swiper-slide">
+              <article class="blog__article">
+                <figure class="blog__figure">
+                  <img src="/img/lake.jpg" alt="" class="blog__img" />
+                  <figcaption>Lake</figcaption>
+                </figure>
+                <p class="blog__title">Title</p>
+                <p class="blog__date">21 Jun. 2020</p>
+                <p class="blog__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facere culpa laborum recusandae pariatur soluta veniam!
+                </p>
+              </article>
+            </div> -->
+    </section>
+    <section class="contact">
+      <div class="contact__info">
+        <h3 class="heading contact__heading">Contact info</h3>
+        <p class="contact__paragraph">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero,
+          asperiores aliquam magni necessitatibus consequatur magnam ipsum nobis
+          reiciendis nostrum quos tempora ut. Nam quo illo pariatur architecto
+          laborum nemo deserunt?
+        </p>
+        <p class="contact__details">
+          adres <span>santa monica Boulevard, LA</span>
+        </p>
+        <p class="contact__details">phone <span>+44 987 065 908</span></p>
+        <p class="contact__details">Email <span>info@example.com</span></p>
+      </div>
+      <form action="" class="contact__form">
+        <input class="input input__name" type="text" placeholder="Your name" />
+        <input
+          class="input input__email"
+          type="text"
+          placeholder="Your email"
+        />
+        <input
+          class="input input__title"
+          type="text"
+          placeholder="Your Title"
+        />
+        <textarea
+          class="input input__comment"
+          type="text"
+          placeholder="Your Commment"
+        >
+        </textarea>
+        <input class="input input__btn" type="submit" value="Send Message" />
+      </form>
+    </section>
+    <footer class="footer">
+      <div class="footer__details">
+        <h4 class="heading footer__heading">About Us</h4>
+        <p class="footer__paragrapgh">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat
+          voluptatibus minus fugiat labore repellendus, blanditiis ad expedita
+          excepturi, ratione exercitationem, tenetur perferendis soluta!
+          Doloremque, ducimus eos odit inventore hic reiciendis!
+        </p>
+        <div class="footer__socials">
+          <a href="" class="footer__icon">
+            <img src="/img/facebook.png" alt="" />
+          </a>
+          <a href="" class="footer__icon">
+            <img src="/img/pinterest.png" alt="" />
+          </a>
+          <a href="" class="footer__icon">
+            <img src="/img/twitter.png" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="footer__details">
+        <h4 class="heading footer__heading">Latest Twits</h4>
+
+        <ul class="tweets__list">
+          <li class="tweets__item">Lorem ipsum dolor sit amet.</li>
+          <li class="tweets__item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+            cumque?
+          </li>
+          <li class="tweets__item">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          </li>
+          <li class="tweets__item">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic
+            inventore blanditiis facere eos. Nostrum, praesentium!
+          </li>
+        </ul>
+      </div>
+      <div class="footer__details">
+        <h4 class="heading footer__heading">Instagram</h4>
+        <p class="footer__paragrapgh">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat
+          voluptatibus minus fugiat labore repellendus, blanditiis ad expedita
+          excepturi, ratione exercitationem, tenetur perferendis soluta!
+          Doloremque, ducimus eos odit inventore hic reiciendis!
+        </p>
+      </div>
+    </footer>
+    <script src="./node_modules/macy/dist/macy.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/js/swiper.min.js"></script> -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "snowagency",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./sass/main.scss ./css/style.css"
+  },
+  "author": "robert purc",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.26.8"
+  },
+  "dependencies": {
+    "macy": "^2.5.1",
+    "swiper": "^5.4.5"
+  }
+}

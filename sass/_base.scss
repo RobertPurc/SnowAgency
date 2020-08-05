@@ -1,0 +1,64 @@
+//MEdia Queries break points
+
+$bp-largest: 75em; //1200px
+$bp-large: 62.5em; //1000px
+$bp-medium: 50em; //800px
+$bp-small: 37.5em; //600px
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //1rem = 10px
+
+  @media screen and (max-width: $bp-largest) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-weight: 300;
+  line-height: 1.6;
+}
+.container {
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [center-start] repeat(
+      10,
+      [col-start] minmax(min-content, 14rem) [col-end]
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-rows:
+    minmax(min-content, 90vh) repeat(2, minmax(min-content, 30vh))
+    min-content minmax(min-content, 50vh) minmax(min-content, 85vh) minmax(
+      min-content,
+      60vh
+    )
+    minmax(min-content, 40vh);
+}
+.heading {
+  font-size: 4rem;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Cardo", serif;
+  color: #000;
+  padding-top: 2rem;
+}
+.description {
+  padding: 4rem 0;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #555;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  // max-width: 100rem;
+}
+.nav-scrolled {
+  background-color: #222;
+}

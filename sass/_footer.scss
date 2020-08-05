@@ -1,0 +1,81 @@
+.footer {
+  margin-top: 10rem;
+  height: 100%;
+  width: 100%;
+  // background-color: #222;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
+    url("/img/footer.jpg");
+  grid-column: -1/1;
+  display: flex;
+  padding: 4rem 10rem;
+  justify-content: space-evenly;
+  // flex-grow: none;
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    // justify-content: center;
+    align-items: center;
+  }
+  &__heading {
+    font-weight: 400;
+    color: #fff;
+    align-self: flex-start;
+
+    // flex-shrink: -1;
+    flex-grow: -1;
+    // font-family: "cardo", sans-serif;
+  }
+
+  &__paragrapgh {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    color: #aaa;
+    font-family: "Montserrat", sans-serif;
+
+    // max-width: 30rem;
+  }
+
+  &__socials {
+    margin-top: 3rem;
+    align-self: flex-start;
+  }
+  &__icon {
+    // margin-top: 1rem;
+    margin-right: 2rem;
+
+    img {
+      // color: white;
+      width: 3rem;
+    }
+  }
+}
+.tweets__list {
+  padding-top: 1rem;
+  // padding-left: 2rem;
+  padding-left: 2rem;
+}
+
+.tweets__item {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // font-family: "Cardo", serif;
+  // text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: #999;
+  padding: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  list-style-image: url("/img/twitterSmall.png");
+  // transform: translateY(-50%);
+  // vertical-align: middle;
+  // height: 50px;
+  // font-family: "Noto Sans", sans-serif;
+}
