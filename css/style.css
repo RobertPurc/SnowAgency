@@ -26,6 +26,11 @@ body {
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
   grid-template-rows: minmax(min-content, 90vh) repeat(2, minmax(min-content, 30vh)) min-content minmax(min-content, 50vh) minmax(min-content, 85vh) minmax(min-content, 60vh) minmax(min-content, 40vh);
 }
+@media screen and (max-width: 41.25em) {
+  .container {
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(6, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  }
+}
 
 .heading {
   font-size: 4rem;
@@ -71,10 +76,21 @@ body {
   text-transform: uppercase;
   font-family: "Noto Sans", sans-serif;
 }
+@media screen and (max-width: 41.25em) {
+  .header__title {
+    font-size: 1.6rem;
+  }
+}
 .header__heading {
   text-align: center;
   font-family: "Cardo", serif;
   font-size: 8rem;
+}
+@media screen and (max-width: 41.25em) {
+  .header__heading {
+    font-size: 6rem;
+    padding: 0 1rem;
+  }
 }
 .header__heading span {
   font-weight: 400;
@@ -82,6 +98,11 @@ body {
   text-align: center;
   display: block;
   font-style: italic;
+}
+@media screen and (max-width: 41.25em) {
+  .header__heading span {
+    font-size: 4rem;
+  }
 }
 .header__btn {
   position: absolute;
@@ -117,6 +138,11 @@ body {
   font-size: 4rem;
   font-family: "Parisienne", cursive;
 }
+@media screen and (max-width: 41.25em) {
+  .navigation__logo {
+    margin: 1rem 0rem 1rem 8rem;
+  }
+}
 .navigation__btn {
   padding: 1rem;
   margin: 1rem 15rem 1rem 0rem;
@@ -147,6 +173,11 @@ body {
   width: 100%;
   background-color: #fff;
   height: 2px;
+}
+@media screen and (max-width: 41.25em) {
+  .navigation__btn {
+    margin: 1rem 8rem 1rem 0rem;
+  }
 }
 .navigation__list {
   list-style-type: none;
@@ -200,13 +231,19 @@ body {
   height: 100%;
   padding: 4rem 0;
   position: relative;
-  background-image: url("/img/tesimonials-bg.jpg");
+  background-image: url("../img/tesimonials-bg.jpg");
 }
 .testimonials__text {
   font-size: 2.2rem;
   font-family: "Cardo", serif;
   font-style: italic;
   padding: 1rem;
+}
+@media screen and (max-width: 41.25em) {
+  .testimonials__text {
+    font-size: 2rem;
+    text-align: center;
+  }
 }
 .testimonials__author {
   font-size: 1.2rem;
@@ -297,6 +334,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 41.25em) {
+  .blog {
+    grid-column: -1/1;
+  }
+}
 .blog__container {
   position: relative;
   flex-grow: 1;
@@ -305,9 +347,34 @@ body {
 .blog__container .swiper-pagination-bullet-active {
   background: #000 !important;
 }
+@media screen and (max-width: 41.25em) {
+  .blog__container {
+    width: 30rem;
+  }
+}
 .blog__slider {
   max-width: 140rem;
   height: 100%;
+}
+@media screen and (max-width: 100em) {
+  .blog__slider {
+    max-width: 110rem;
+  }
+}
+@media screen and (max-width: 62.5em) {
+  .blog__slider {
+    max-width: 90rem;
+  }
+}
+@media screen and (max-width: 51.25em) {
+  .blog__slider {
+    max-width: 70rem;
+  }
+}
+@media screen and (max-width: 41.25em) {
+  .blog__slider {
+    width: 30rem;
+  }
 }
 .blog__article {
   cursor: grab;
@@ -316,6 +383,16 @@ body {
   box-shadow: 0px 10px 20px #f0f0f0;
   border-radius: 5px;
   margin: 4rem;
+}
+@media screen and (max-width: 100em) {
+  .blog__article {
+    width: 30rem;
+  }
+}
+@media screen and (max-width: 62.5em) {
+  .blog__article {
+    width: 25rem;
+  }
 }
 .blog__title {
   font-size: 3rem;
@@ -438,12 +515,11 @@ body {
 
 .footer {
   margin-top: 10rem;
-  height: 100%;
   width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url("/img/footer.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url("../img/footer.jpg");
   grid-column: -1/1;
   display: flex;
   padding: 4rem 10rem;
@@ -478,6 +554,36 @@ body {
 .footer__icon img {
   width: 3rem;
 }
+.footer__gallery {
+  padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer__figure {
+  width: 12rem;
+  height: 12rem;
+  margin: 0 1rem 1rem 0;
+  position: relative;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+.footer__figure figcaption {
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
+}
+.footer__img {
+  border-radius: 3px;
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
 
 .tweets__list {
   padding-top: 1rem;
@@ -491,7 +597,12 @@ body {
   padding: 1rem;
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
-  list-style-image: url("/img/twitterSmall.png");
+  list-style-image: url("../img/twitterSmall.png");
+}
+
+.u-align-left {
+  width: 100%;
+  text-align: left;
 }
 
 /*# sourceMappingURL=style.css.map */

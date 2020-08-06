@@ -24,17 +24,29 @@
     font-size: 2rem;
     text-transform: uppercase;
     font-family: "Noto Sans", sans-serif;
+
+    @media screen and (max-width: $bp-660) {
+      font-size: 1.6rem;
+    }
   }
   &__heading {
     text-align: center;
     font-family: "Cardo", serif;
     font-size: 8rem;
+
+    @media screen and (max-width: $bp-660) {
+      font-size: 6rem;
+      padding: 0 1rem;
+    }
     span {
       font-weight: 400;
       font-size: 6rem;
       text-align: center;
       display: block;
       font-style: italic;
+      @media screen and (max-width: $bp-660) {
+        font-size: 4rem;
+      }
     }
   }
 
@@ -76,6 +88,10 @@
     font-size: 4rem;
     font-family: "Parisienne", cursive;
     // padding: 2rem;
+
+    @media screen and (max-width: $bp-660) {
+      margin: 1rem 0rem 1rem 8rem;
+    }
   }
 
   &__btn {
@@ -111,6 +127,10 @@
       width: 100%;
       background-color: #fff;
       height: 2px;
+    }
+
+    @media screen and (max-width: $bp-660) {
+      margin: 1rem 8rem 1rem 0rem;
     }
   }
   &__list {

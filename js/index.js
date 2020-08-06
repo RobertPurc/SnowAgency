@@ -85,12 +85,12 @@ var blog = new Swiper(".blog__slider", {
       // spaceBetween: 20,
     },
     // when window width is >= 480px
-    480: {
+    660: {
       slidesPerView: 2,
       // spaceBetween: 30,
     },
     // when window width is >= 640px
-    640: {
+    820: {
       slidesPerView: 3,
       spaceBetween: 10,
     },

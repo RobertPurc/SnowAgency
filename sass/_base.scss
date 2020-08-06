@@ -1,9 +1,9 @@
 //MEdia Queries break points
-
-$bp-largest: 75em; //1200px
-$bp-large: 62.5em; //1000px
-$bp-medium: 50em; //800px
-$bp-small: 37.5em; //600px
+$bp-1600: 100em; //1600px
+$bp-1200: 75em; //1200px
+$bp-1000: 62.5em; //1000px
+$bp-820: 51.25em; //800px
+$bp-660: 41.25em; //600px
 
 *,
 *::before,
@@ -17,7 +17,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; //1rem = 10px
 
-  @media screen and (max-width: $bp-largest) {
+  @media screen and (max-width: $bp-1200) {
     font-size: 50%;
   }
 }
@@ -41,7 +41,17 @@ body {
       60vh
     )
     minmax(min-content, 40vh);
+
+  @media screen and (max-width: $bp-660) {
+    grid-template-columns:
+      [full-start] minmax(6rem, 1fr) [center-start] repeat(
+        6,
+        [col-start] minmax(min-content, 14rem) [col-end]
+      )
+      [center-end] minmax(6rem, 1fr) [full-end];
+  }
 }
+
 .heading {
   font-size: 4rem;
   text-align: center;
