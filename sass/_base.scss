@@ -68,7 +68,19 @@ body {
   font-weight: 300;
   font-family: "Montserrat", sans-serif;
   // max-width: 100rem;
+
+  // @media screen and (max-width: $bp-660) {
+  //   padding: 2rem;
+
+  //   // grid-column: center-start / center-end;
+  // }
 }
 .nav-scrolled {
   background-color: #222;
+}
+
+.u-padding {
+  @media screen and (max-width: $bp-660) {
+    padding: 2rem 5rem;
+  }
 }

@@ -4,12 +4,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: $bp-660) {
+    flex-wrap: wrap;
+  }
   // background-color: #ddd;
   // flex-direction: column;
 
   &__info {
     // width: 50%;
     flex-basis: 60%;
+
+    @media screen and (max-width: $bp-660) {
+      flex-basis: 100%;
+    }
   }
 
   &__heading {
@@ -44,6 +52,11 @@
     // justify-content: center;
     flex-wrap: wrap;
     // flex-basis: 50%;
+
+    @media screen and (max-width: $bp-660) {
+      margin: 5rem 0;
+      padding: 0;
+    }
   }
 }
 

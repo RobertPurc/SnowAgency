@@ -12,6 +12,12 @@
   display: flex;
   padding: 4rem 10rem;
   justify-content: space-evenly;
+
+  @media screen and (max-width: $bp-660) {
+    padding: 2rem 0rem;
+    flex-wrap: wrap;
+    // grid-column: center-start / center-end;
+  }
   // flex-grow: none;
 
   &__details {
