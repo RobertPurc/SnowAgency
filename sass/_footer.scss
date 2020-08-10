@@ -12,12 +12,18 @@
   display: flex;
   padding: 4rem 10rem;
   justify-content: space-evenly;
+  @media screen and (max-width: $bp-1000) {
+    padding: 2rem 5rem;
+    // max-width: 90rem;
+    flex-wrap: wrap;
+  }
 
   @media screen and (max-width: $bp-660) {
-    padding: 2rem 0rem;
+    padding: 2rem;
     flex-wrap: wrap;
     // grid-column: center-start / center-end;
   }
+
   // flex-grow: none;
 
   &__details {
@@ -26,12 +32,30 @@
     width: 40rem;
     // justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: $bp-1000) {
+      padding: 1rem;
+      // max-width: 90rem;
+      // flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: $bp-660) {
+      // justify-content: center;
+      // align-items: centers;
+      // grid-column: center-start / center-end;
+    }
   }
   &__heading {
     font-weight: 400;
     color: #fff;
     align-self: flex-start;
+    @media screen and (max-width: $bp-660) {
+      align-self: center;
 
+      // justify-content: center;
+      // align-items: centers;
+      // grid-column: center-start / center-end;
+    }
     // flex-shrink: -1;
     flex-grow: -1;
     // font-family: "cardo", sans-serif;
@@ -43,13 +67,23 @@
     letter-spacing: 1px;
     color: #aaa;
     font-family: "Montserrat", sans-serif;
-
+    @media screen and (max-width: $bp-660) {
+      // align-self: center !important;
+      width: 100%;
+      text-align: center !important;
+      // justify-content: center;
+      // align-items: centers;
+      // grid-column: center-start / center-end;
+    }
     // max-width: 30rem;
   }
 
   &__socials {
     margin-top: 3rem;
     align-self: flex-start;
+    @media screen and (max-width: $bp-660) {
+      align-self: center;
+    }
   }
   &__icon {
     // margin-top: 1rem;
@@ -68,6 +102,13 @@
     // height: 40rem;
     display: flex;
     flex-wrap: wrap;
+    @media screen and (max-width: $bp-660) {
+      align-self: center;
+
+      justify-content: center;
+      // align-items: centers;
+      // grid-column: center-start / center-end;
+    }
     // justify-content: center;
   }
 
@@ -88,6 +129,14 @@
       width: 100%;
       height: 100%;
       background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
+    }
+
+    @media screen and (max-width: $bp-660) {
+      // align-self: center;
+      margin: 1rem;
+      // justify-content: center;
+      // align-items: centers;
+      // grid-column: center-start / center-end;
     }
   }
 

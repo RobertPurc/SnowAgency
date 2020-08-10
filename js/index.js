@@ -18,7 +18,7 @@ var macy = Macy({
 // fade in navbar effect
 const sectionOne = document.querySelector(".about");
 const navigation = document.querySelector(".navigation");
-const bottomOfNav = sectionOne.offsetTop - navigation.offsetHeight - 100;
+const bottomOfNav = sectionOne.offsetTop - navigation.offsetHeight;
 
 const changeColor = () => {
   if (window.scrollY >= bottomOfNav) {
