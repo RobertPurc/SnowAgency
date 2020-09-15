@@ -1,192 +1,110 @@
 .footer {
   margin-top: 10rem;
-  // height: 100%;
-  width: 100%;
-  // background-color: #222;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
-    url("../img/footer.jpg");
   grid-column: -1/1;
-  display: flex;
-  padding: 4rem 10rem;
-  justify-content: space-evenly;
-  @media screen and (max-width: $bp-1000) {
-    padding: 2rem 5rem;
-    // max-width: 90rem;
-    flex-wrap: wrap;
+  padding: 2rem 0;
+  // background-color: #333333
+  background-image: linear-gradient(
+      to right,
+      rgba(34, 34, 34, 0.9),
+      rgba(20, 20, 20, 0.8)
+    ),
+    url("../img/footer.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: grid;
+  grid-template-columns: 1fr repeat(3, minmax(min-content, 40rem)) 1fr;
+  grid-column-gap: 2rem;
+  @media screen and (max-width: $bp-700) {
+    grid-template-columns: 1fr repeat(2, minmax(min-content, 40rem)) 1fr;
+    grid-template-rows: repeat(2, min-content);
   }
 
-  @media screen and (max-width: $bp-660) {
-    padding: 2rem;
-    flex-wrap: wrap;
-    // grid-column: center-start / center-end;
+  @media screen and (max-width: $bp-500) {
+    grid-template-columns: 1fr minmax(min-content, 40rem) 1fr;
+    grid-template-rows: repeat(3, min-content);
   }
+  // grid-column: ;
 
-  // flex-grow: none;
-
-  &__details {
-    display: flex;
-    flex-direction: column;
-    width: 40rem;
-    // justify-content: center;
-    align-items: center;
-
-    @media screen and (max-width: $bp-1000) {
-      padding: 1rem;
-      // max-width: 90rem;
-      // flex-wrap: wrap;
-    }
-
-    @media screen and (max-width: $bp-660) {
-      // justify-content: center;
-      // align-items: centers;
-      // grid-column: center-start / center-end;
-    }
-  }
   &__heading {
-    font-weight: 400;
-    color: #fff;
-    align-self: flex-start;
-    @media screen and (max-width: $bp-660) {
-      align-self: center;
+    color: white;
+  }
 
-      // justify-content: center;
-      // align-items: centers;
-      // grid-column: center-start / center-end;
+  &__icon > img {
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  &__details-1 {
+    grid-column: 2/3;
+  }
+
+  &__details-2 {
+    @media screen and (max-width: $bp-500) {
+      grid-column: 2/3;
+      grid-row: 3/4;
     }
-    // flex-shrink: -1;
-    flex-grow: -1;
-    // font-family: "cardo", sans-serif;
+  }
+
+  &__details-3 {
+    @media screen and (max-width: $bp-700) {
+      grid-row: 2/3;
+      grid-column: 2/4;
+    }
+
+    @media screen and (max-width: $bp-500) {
+      grid-column: 2/3;
+      grid-row: 4/5;
+    }
+
+    // grid-column: 2/3;
   }
 
   &__paragrapgh {
-    padding-top: 1rem;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-    color: #aaa;
     font-family: "Montserrat", sans-serif;
-    @media screen and (max-width: $bp-660) {
-      // align-self: center !important;
-      width: 100%;
-      text-align: center !important;
-      // justify-content: center;
-      // align-items: centers;
-      // grid-column: center-start / center-end;
-    }
-    // max-width: 30rem;
+    font-size: 1.4rem;
+    color: white;
+    padding: 1rem;
+    // letter-spacing: 1px;
+    text-align: justify;
   }
 
   &__socials {
-    margin-top: 3rem;
-    align-self: flex-start;
-    @media screen and (max-width: $bp-660) {
-      align-self: center;
-    }
-  }
-  &__icon {
-    // margin-top: 1rem;
-    margin-right: 2rem;
-
-    img {
-      // color: white;
-      width: 3rem;
-    }
-  }
-
-  &__gallery {
-    padding-top: 1rem;
-    // background-color: #fff;
-    // width: 100%;
-    // height: 40rem;
-    display: flex;
-    flex-wrap: wrap;
-    @media screen and (max-width: $bp-660) {
-      align-self: center;
-
-      justify-content: center;
-      // align-items: centers;
-      // grid-column: center-start / center-end;
-    }
-    // justify-content: center;
-  }
-
-  &__figure {
-    // padding: 1rem;
-    width: 12rem;
-    height: 12rem;
-    margin: 0 1rem 1rem 0;
-    position: relative;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 3px;
-    figcaption {
-      border-radius: 3px;
-      // padding: 0 1rem 1rem 0;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
-    }
-
-    @media screen and (max-width: $bp-660) {
-      // align-self: center;
-      margin: 1rem;
-      // justify-content: center;
-      // align-items: centers;
-      // grid-column: center-start / center-end;
-    }
-  }
-
-  &__img {
-    border-radius: 3px;
-    display: block;
-    height: 100%;
+    padding: 2rem 0;
     width: 100%;
-    object-fit: cover;
-    position: relative;
-    // background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
-
-    // &::after {
-    //   position: absolute;
-    //   top: 0;
-    //   left: 0;
-    //   content: "";
-    //   width: 100%;
-    //   height: 100%;
-    //   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
-    //   z-index: 1000;
-    // }
+    justify-content: space-evenly;
+    display: flex;
   }
 }
-.tweets__list {
-  padding-top: 1rem;
-  // padding-left: 2rem;
-  padding-left: 2rem;
-}
 
-.tweets__item {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // font-family: "Cardo", serif;
-  // text-transform: uppercase;
-  font-size: 1.2rem;
-  letter-spacing: 1px;
-  color: #999;
-  padding: 1rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: normal;
-  list-style-image: url("../img/twitterSmall.png");
-  // transform: translateY(-50%);
-  // vertical-align: middle;
-  // height: 50px;
-  // font-family: "Noto Sans", sans-serif;
-}
-.u-align-left {
-  width: 100%;
-  text-align: left;
-  // padding-top: 1rem;
+.tweets {
+  &__list {
+    // letter-spacing: 1px;
+    list-style-type: none;
+    font-size: 1.3rem;
+
+    // line-height: 2;
+    padding: 1rem;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  &__item {
+    padding: 0.5rem 0;
+    text-align: justify;
+    display: flex;
+
+    align-items: center;
+  }
+
+  &__pionter {
+    // height: 100%;
+    // display: flex;
+    transform: translateY(15%);
+    // justify-content: center;
+
+    padding: 0 1rem;
+  }
 }

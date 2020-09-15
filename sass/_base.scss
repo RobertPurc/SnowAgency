@@ -3,7 +3,10 @@ $bp-1600: 100em; //1600px
 $bp-1200: 75em; //1200px
 $bp-1000: 62.5em; //1000px
 $bp-820: 51.25em; //800px
+$bp-700: 43.75em;
 $bp-660: 41.25em; //600px
+
+$bp-500: 31.25em;
 
 *,
 *::before,
@@ -83,4 +86,13 @@ body {
   @media screen and (max-width: $bp-660) {
     padding: 2rem 5rem;
   }
+}
+
+.u-align-center {
+  // justify-content: center;
+  text-align: center !important;
+}
+
+.u-align-left {
+  text-align: left !important;
 }
